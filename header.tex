@@ -1,0 +1,83 @@
+\documentclass[
+  bibliography=totoc,
+  captions=tableheading,
+  titlepage=firstiscover,
+  twocolumn,
+  %10pt,
+]{scrartcl}
+
+\setlength{\oddsidemargin}{0.0 cm}
+\setlength{\evensidemargin}{0.0 cm}
+\setlength{\topmargin}{-1cm}
+\setlength{\textheight}{24 cm}
+\setlength{\textwidth}{16 cm}
+
+\pagestyle{plain}
+
+\usepackage{fixltx2e}
+\usepackage[aux]{rerunfilecheck}
+\usepackage{polyglossia}
+%\frenchspacing
+\setmainlanguage[variant=british]{english}
+\usepackage[intlimits]{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{fontspec}
+\setsansfont{Helvetica}
+\setmainfont{Charis SIL}
+\setmonofont[Scale=0.92]{Source Code Pro}
+\defaultfontfeatures{Ligatures=TeX}
+\usepackage[
+  math-style=ISO,
+  bold-style=ISO,
+  sans-style=italic,
+  nabla=upright,
+  partial=upright,
+]{unicode-math}
+\setmathfont{Tex Gyre Pagella Math}
+%\setmathfont{Asana Math}
+%\setmathfont{Latin Modern Math}
+\setmathfont[range={\mathscr, \mathbfscr}]{XITS Math}
+\setmathfont[range=\coloneq]{XITS Math}
+\setmathfont[range=\propto]{XITS Math}
+\removenolimits{\int}
+\let\hbar\relax
+\DeclareMathSymbol{\hbar}{\mathord}{AMSb}{"7E}
+\DeclareMathSymbol{ℏ}{\mathord}{AMSb}{"7E}
+\usepackage[autostyle]{csquotes}
+\usepackage[
+  locale=DE,
+  separate-uncertainty=true,
+  per-mode=symbol-or-fraction,
+]{siunitx}
+\usepackage[version=3]{mhchem}
+\usepackage{xfrac}
+%\usepackage[section, below]{placeins}
+\usepackage[
+  labelfont=bf,
+  font=small,
+  width=0.9\textwidth,
+]{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{float}
+\usepackage[italic]{hepnicenames}
+\floatplacement{figure}{htbp}
+\floatplacement{table}{htbp}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{biblatex}
+\addbibresource{main.bib}
+\usepackage{microtype}
+\usepackage{blindtext}
+\usepackage[
+  unicode,
+  pdfusetitle,
+  pdfcreator={},
+  pdfproducer={},
+]{hyperref}
+\usepackage{bookmark}
+\usepackage[shortcuts]{extdash}
+\usepackage{tikz}
+
