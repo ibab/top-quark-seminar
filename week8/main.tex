@@ -1,0 +1,64 @@
+\input{../header.tex}
+
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows,shapes}
+
+\newcommand{\package}[1]{\texttt{#1}}
+\newcommand{\class}[1]{\texttt{#1}}
+\newcommand{\function}[1]{\texttt{#1}}
+\newcommand{\fpath}[1]{\texttt{#1}}
+
+\captionsetup{width=0.45\textwidth}
+
+\newcommand{\eg}{e.g.\@ }
+
+\usepackage{hyphenat}
+
+\begin{document}
+
+\twocolumn[{%
+\vspace{-4em}
+\begin{center}
+  {\LARGE \textbf{\textsf{Top Quark Seminar 8}}} \\
+  \vspace{1em}
+  {\Large \textbf{\textsf{Igor Babuschkin}}} \\
+  \vspace{1em}
+  {\large \textbf{\textsf{8th December 2014}}}
+  \section*{Summary of \enquote{Lifting degeneracies in Higgs couplings using single top production in association with a Higgs boson}\cite{farina}}
+\end{center}
+}]
+
+The paper presents a possible strategy to lift the ambiguity of current estimates of the Yukawa couplings of the Higgs boson to fermions.
+Such an ambiguity arises in different decay channels, the most important being $\HepProcess{\Ph\to\Pgamma\Pgamma}$.
+The authors propose a measurement investigating the hard process \HepProcess{\PW\Pqb\to\Pqt\Ph}, in which the Higgs coupling to fermions interferes almost completely destructively with other couplings within the Standard Model.
+
+Such a Higgs production with associated single top could be studied as part of the signal $\HepProcess{\Pp\Pp\to\Pqt\Ph j}$ at the LHC.
+If the Higgs boson is taken to decay into $\Pqb\APqb$, the experimental signature would be a lepton, missing energy and three or four $\Pqb$-jets.
+
+The authors proceed to simulate the decay and to estimate how many signal events might be observed at the LHC.
+Finally, they investigate to what extent such an analysis could lift the degeneracy of the Higgs coupling observed in other decay channels.
+
+The process \HepProcess{\PW\Pqb\to\Pqt\Ph} is calculated in the framework of effective field theory by factorizing the \PW radiation from the \Pqb scattering.
+From the resulting amplitude, it is evident that the Higgs to fermion coupling cancels within the Standard Model ($c_V = c_F$, where $c_V$ and $c_F$ are the Higgs to vector and fermion coupling constants divided by their Standard Model expectations).
+For $c_V \neq c_F$, the amplitude grows with $\sqrt{s}$ , which leads to a scattering cross section that approaches a constant value for large $s$.
+This clearly violates unitarity, but should be valid below a certain cutoff scale, which the authors determine to be at roughly \SI{10}{TeV}, which surpasses energies probed at the LHC.
+
+The authors generate signal data using their model and proceed to take detector effects into account by smearing and rescaling the jet $p_T$ values and applying acceptance cuts.
+They further apply \Pqb-tagging and lepton reconstruction efficiencies.
+
+Various backgrounds are generated for final states with three or four \Pqb-tags and selection cuts are applied.
+From the number of remaining events (comparing the $c_F=1$ case with $c_F=-1$), the authors obtain exclusion limits on the value of $c_F$.
+Combining the results for three and four final state \Pqb-jets through Fisher's method, the authors obtain exclusion limits in the $c_V$-$c_F$-plane for datasets generated with $s=\SI{8}{TeV}$ and $s=\SI{14}{TeV}$, corresponding to current and future capabilities at the LHC.
+In order to decide how relevant their results are with respect to recent Higgs coupling measurements, they add combined results from ATLAS, CMS and Tevatron \cite{espinosa} to their exclusion plot.
+The combined Higgs coupling results feature a clear degeneracy.
+
+For $s=\SI{8}{TeV}$ the authors conclude that parts of the region relevant for $c_F=-1$ can be excluded, while at $s=\SI{14}{TeV}$ a conclusive removal of the degeneracy is possible.
+
+The authors claim that their results motivate undertaking full analyses of Higgs production with an associated top quark at ATLAS and CMS.
+
+\vspace{1em}
+
+\nocite{*}
+\printbibliography
+
+\end{document}
