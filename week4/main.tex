@@ -27,7 +27,7 @@
 \end{center}
 }]
 
-The article discusses how correlated estimates $y_i$ of a physical quantity $y$ can be combined to produce a single estimate $\hat{y}$.
+The article\cite{lyons} discusses how correlated estimates $y_i$ of a physical quantity $y$ can be combined to produce a single estimate $\hat{y}$.
 Such a combination is desirable, because providing a single, clear result for a measurement allows it to be interpreted in a straightforward way.
 
 Uncorrelated estimates can be combined by the weighted mean
@@ -57,7 +57,7 @@ Taking the minimal $S$ to be $\chi^2$-distributed with $(n - 1)$ degrees of free
 The covariance matrix can be determined by providing a model that explains the correlation between the individual measurements, or approximately by performing a Monte Carlo simulation.
 
 The authors continue by demonstrating that BLUE performs sensibly in several edge cases, for example the case of two identical, perfectly correlated measurements.
-In this case, the estimate and precision of the combination is equal to either of the two measurements.
+In this case, the estimate and precision of the combination correspond to those of the two individual measurements.
 
 The authors then detail the general case of combining two correlated estimates.
 An interesting effect that can occur when the two measurements are highly correlated is the occurence of negative coefficients $α_i$ in the BLUE combination, which can be seen in figure \ref{simple}.
@@ -71,7 +71,7 @@ An interesting effect that can occur when the two measurements are highly correl
 
 The technique is then demonstrated by applying it to a real experiment, the measurement of the charm quark lifetime at the Super Proton Synchrotron at CERN.
 
-The charm lifetime $τ$ has been measured in four different ways: By fully reconstructing $D$ meson decays, by measuring the transverse length of decaying mesons, by measuring the impact parameter and by correcting the momentum estimate for the absence of missing decay products.
+The charm lifetime $τ$ has been measured in four different ways\cite{augilar}: By fully reconstructing $D$ meson decays, by measuring the transverse length of decaying mesons, by measuring the impact parameter and by correcting the momentum estimate for the absence of missing decay products.
 
 A covariance matrix for these four measurements is estimated from Monte Carlo simulation.
 Because the error on as single $τ$ depends on the size of $τ$, the authors proceed to replace the individual errors on the $τ_i$ with a single error, derived from an approximation to the correct $τ$.
@@ -85,10 +85,14 @@ Further, systematic errors for the four measurements are assumed to be independe
 The authors proceed to apply the BLUE method to derive a single estimate for $τ$.
 They apply a $χ^2$ test to the minimal sum of squares from \eqref{squares} to check the compability of the four initial measurements and conclude that they are compatible.
 
-The BLUE method is commonly applied in high energy physics to calculate world combinations of measurements from different experiments.
+The BLUE method is commonly applied in high energy physics to calculate combinations of measurements from different experiments.
 One such case is the world combination of the top quark mass displayed in figure \ref{world}.
-Monte Carlo techniques usually can't be used to calculate such a combination.
+This is the first top mass combination of LHC and Tevatron results.
+
+Monte Carlo techniques usually can't be used to derive such a combination.
 Instead, different sources of uncertainty can be listed for each experiment and correlation coefficients proposed for each of them.
+The correlation coefficients can be used to construct a covariance matrix.
+The BLUE method can then be employed to calculate a combination.
 
 \begin{figure}
   \includegraphics[width=0.5\textwidth]{./figures/world.pdf}
