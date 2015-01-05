@@ -3,7 +3,7 @@
 
 Summaries:
 
- - [ ] Session 1 (Search for the Top Quark: Results from the DØ Experiment)
+ - [X] Session 1 (Search for the Top Quark: Results from the DØ Experiment)
  - [ ] Session 2 (Measurement of the ttbar production cross-section using eμ events with b-tagged jets in pp collisions at √s = 7 and 8 TeV with the ATLAS detector)
  - [ ] Session 3 (Measurement of the single-top-quark t-channel cross section in pp collisions at √s = 7 TeV, CMS)
  - [X] Session 4 (How to combine correlated estimates of a single physical quantity)
