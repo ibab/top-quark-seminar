@@ -32,11 +32,11 @@ Such a combination is desirable, because providing a single, clear result for a 
 
 Uncorrelated estimates can be combined by the weighted mean
 \begin{equation}
-  \hat{y} = \sum_i{\frac{y_i}{\sigma_i^2}} σ\:,
+  \hat{y} = \sum_i{\frac{y_i}{\sigma_i^2}} \frac{1}{\sum_j 1/\sigma_j^2}\:,
 \end{equation}
-where $σ_i$ are the errors of the individual measurements $y_i$ and $σ$ is the error of $\hat{y}$ given by
+where $σ_i$ are the errors of the individual measurements $y_i$ and the error of $\hat{y}$ is given by
 \begin{equation}
-  \frac{1}{σ^2} = \frac{1}{\sum_i 1/σ_i^2 }\:.
+  \frac{1}{σ^2} = \sum_i \frac{1}{σ_i^2}\:.
 \end{equation}
 
 For the case of correlated estimates, the authors propose a technique called BLUE (Best Linear Unbiased Estimate).
