@@ -15,6 +15,6 @@ Summaries:
  - [X] Session 10 (Search for pair and single production of new heavy quarks that decay to a Z boson and a third-generation quark in pp collisions at √s = 8 TeV with the ATLAS detector)
  - [X] Session 11 (Top quark precision physics at the International Linear Collider)
  - [X] Session 12 (The anti-kt jet clustering algorithm)
- - [ ] Session 13 (Top B Physics at the LHC)
+ - [X] Session 13 (Top B Physics at the LHC)
  - [ ] Session 14 (On the metastability of the Standard Model vacuum)
 
