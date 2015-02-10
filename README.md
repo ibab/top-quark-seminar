@@ -11,7 +11,7 @@ Summaries:
  - [ ] Session 6 (Measurement of top quark polarization in top-antitop events from proton-proton collisions at √s = 7 TeV using the ATLAS detector)
  - [ ] Session 7 (Search for top quark decays t → qH with H → γγ using the ATLAS detector)
  - [X] Session 8 (Lifting degeneracies in Higgs couplings using single top production in association with a Higgs boson)
- - [ ] Session 9 (Top-tagging: A Method for Identifying Boosted Hadronic Tops)
+ - [X] Session 9 (Top-tagging: A Method for Identifying Boosted Hadronic Tops)
  - [X] Session 10 (Search for pair and single production of new heavy quarks that decay to a Z boson and a third-generation quark in pp collisions at √s = 8 TeV with the ATLAS detector)
  - [X] Session 11 (Top quark precision physics at the International Linear Collider)
  - [X] Session 12 (The anti-kt jet clustering algorithm)
