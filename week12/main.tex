@@ -1,51 +1,8 @@
 \input{../header.tex}
 
-\captionsetup{width=0.45\textwidth}
-
 \begin{document}
 
-\twocolumn[{%
-\begin{center}
-  {\LARGE \textbf{\textsf{Top Quark Seminar 12}}} \\
-  \vspace{1em}
-  {\Large \textbf{\textsf{Igor Babuschkin}}} \\
-  \vspace{1em}
-  {\large \textbf{\textsf{18th January 2015}}}
-  \section*{Summary of \enquote{The anti-$k_t$ jet clustering algorithm}}
-\end{center}
-}]
-
-\noindent
-The paper\cite{antikt} presents a new jet clustering algorithm.
-Jet clustering algorithms are used to reconstruct particle jets from hits in a detector and are mainly used at hadronic colliders, such as the Tevatron and LHC.
-The presented algorithm is a sequential recombination algorithm, similar to the $k_t$ and Cambridge/Aachen algorithms.
-
-Sequential recombination algorithms work by defining a distance measure $d_{ij}$ between individual pseudojets (partially reconstructed jets) in the detector:
-\begin{equation}
-  d_{ij} = \min\left(k_{ti}^{2p} k_{tj}^{2p}\right) \frac{Δ_{ij}^2}{R^2}
-\end{equation}
-Here $Δ_{ij}$ is the distance between two pseudojets in the $φ$-$η$-plane, $R$ is a radius parameter that governs the extent of the reconstructed jets in the $φ$-$η$-plane and $k_t$ is the transversal momentum of the respective pseudojet.
-
-Initially, all hits start out as individual pseudojets.
-They are then combined by finding the minimum $d_{ij}$ and creating a new pseudojet from pseudojets $i$ and $j$.
-If the distance $d_{iB}$ of a jet $i$ with respect to the beam is the minimal distance, then jet $i$ has been reconstructed and is removed from the combination process.
-
-The algorithm behaves differently for different parameters $p$.
-The case $p=1$ corresponds to the $k_t$ algorithm, while $p=0$ corresponds to the Cambridge/Aachen algorithm.
-The authors explain that for $p=-1$, a new algorithm (called the \enquote{anti-$k_t$ algorithm} emerges that features several desirable properties.
-
-First of all, like the other sequential recombination algorithms, it is collinear safe, which means it can be simulated without the occurence of cross section divergences.
-Another algorithm with this property is SISCone.
-The $k_t$ algorithm, the Cambridge/Aachen algorithm and SISCone all share the property of creating jets with a \enquote{soft-adaptable} boundary, which means that the jet boundaries are sensitive to fluctuations of soft radiation.
-
-This is in contrast to the anti-$k_t$ algorithm, which features jets with a rigid boundary, similar to the iterative cone algorithm used at CMS and rigid cone algorithms like CellJet used by Pythia.
-While a rigid boundary can facilitate the calibration of jets, simplify theoretical calculations and eliminate some momentum-resolution loss, which makes these algorithms useful, they are not collinear safe.
-
-The anti-$k_t$ algorithm is interesting, because it combines the desirable properties of both classes of algorithms: It is collinear safe and produces jets with rigid boundaries.
-
-The authors present several simulation results that demonstrate the properties of the anti-$k_t$ algorithm in comparison with established jet clustering algorithms, including an example application, a top quark reconstruction analysis.
-
-They conclude that the anti-$k_t$ algorithm is a good alternative to previously used collinear unsafe algorithms.
+\input{summary}
 
 \vspace{1em}
 
