@@ -16,5 +16,5 @@ Summaries:
  - [X] Session 11 (Top quark precision physics at the International Linear Collider)
  - [X] Session 12 (The anti-kt jet clustering algorithm)
  - [X] Session 13 (Top B Physics at the LHC)
- - [ ] Session 14 (On the metastability of the Standard Model vacuum)
+ - [X] Session 14 (On the metastability of the Standard Model vacuum)
 
