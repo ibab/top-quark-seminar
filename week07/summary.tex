@@ -11,26 +11,37 @@
 }]
 
 \noindent
-The paper\cite{aad} documents a search for flavour-changing neutral currents in the decay of a top quark to an up-type quark and a Higgs boson performed using data taken at the ATLAS detector corresponding to integrated luminosities of \SI{4.7}{\text{fb}^-1} at $\sqrt{s} = \SI{7}{TeV}$ and \SI{20.3}{\text{fb}^-1} at $\sqrt{s} = \SI{8}{TeV}$.
+The paper\cite{aad} documents a search for flavour-changing neutral currents in the decay of a top quark to an up-type quark and a Higgs boson performed using data taken at the ATLAS detector corresponding to integrated luminosities of \SI{4.7}{\text{fb}^{-1}} at $\sqrt{s} = \SI{7}{TeV}$ and \SI{20.3}{\text{fb}^{-1}} at $\sqrt{s} = \SI{8}{TeV}$.
 
-Specifically, $t\overline{t}$ events were studied where one of the top quarks decays to $Wb$ and the $W$ decays either leptonically or hadronically (which is the dominant Standard Model process) and the other top quark might decay through the previously mentioned flavour-changing neutral current involving the Higgs boson.
+Specifically, $t\overline{t}$ events were studied where one of the top quarks decays to $Wb$ and the $W$ decays either leptonically or hadronically (which are the dominant Standard Model processes) and the other top quark might decay through the previously mentioned flavour-changing neutral current involving the Higgs boson.
 
-The basic idea of the analysis is as follows:
+The analysis proceeded as follows:
 
 The selection of the $H\to\gamma \gamma$ analysis, which consists of cuts on $E_T$ as well as identification and isolation requirements for the photons is used to select $H$ candidates.
-In addition, cuts are applied that select $t\overline{t}$ events.
-These are chosen appropriately, depending on the type of secondary top quark decay (semi-leptonic or hadronic).
+In addition, several requirements are applied to select for a $t\overline{t}$ event.
+These are chosen depending on whether the second top quark decay is supposed to have decayed hadronically or semi-leptonically.
 
-The diphoton invariant mass can then be studied to estimate the amount of signal in the data sample.
+In the case of a hadronic decay, this means selecting events with at least four jets of which at least one must be $b$-tagged.
+If the invariant mass of one of the jets and the two photons, or the invariant mass of the other three jets is close to the top quark mass, the event is selected.
+The authors state that they did not use $b$-tag association or a restriction on the reconstructed $m_W$ mass as selection criteria, as these didn't improve the sensitivity of the measurement.
 
-% Look at diphoton invariant mass to estimate background
-% Look at both lepton and hadronic final states
-% Four jets, at least one b-tagged
-% combine gamma+gamma+jet and jet+jet+b/lepton+b to top quarks 
-% That's all (no b-tag association or m_W constraint) -> didn't improve analysis
-% 
+For the semi-leptonic decay of the top quark, a cut on the transverse mass of the reconstructed $W$ boson is performed.
 
-% What are the systematic uncertainties?
-% 
+The presence of the theorized flavour changing neutral current would lead to a nonzero branching fraction for $t\to c(u) H$, and thus to an excess of Higgs bosons in the diphoton invariant mass beyond the Standard Model prediction.
+
+To investigate the presence of such an excess, the authors evaluated a combined likelihood model for the diphoton mass distribution simultaneously over all data samples (hadronic/leptonic and \num{7}/\SI{8}{TeV}).
+Higgs bosons produced by Standard Model processes constitute a background that peaks directly below the expected signal.
+The cross section for Higgs boson production is thus constrained to a value calculated by combining the previous $ggF$, VBF, $WH$, $ZH$ and $t\overline{t}H$ measurements.
+The results of the fit are displayed in figure \ref{mgammagamma}.
+
+\begin{figure}
+  \includegraphics[width=0.5\textwidth]{figures/mgammagamma.pdf}
+  \caption{Results of fit to the diphoton invariant mass.\cite{aad}}
+  \label{mgammagamma}
+\end{figure}
+
+To account for nuisance parameters in the model, the Profile Likelihood method was chosen.
+The fit then yields $3.1^{+4.3}_{-3.7}$ as the number of signal events.
+An upper confidence limit of \SI{0.79}{\percent} on the $t\to q H$ branching fraction is then set using the $\text{CL}_\text{s}$ method.
 
 
